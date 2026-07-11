@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BDD Grid Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome Sequential Run(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ixigo.travelbooking.runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpRun"/>
+        </methods>
+      </class> <!-- com.ixigo.travelbooking.runner.TestRunner -->
+    </classes>
+  </test> <!-- Chrome Sequential Run(failed) -->
+</suite> <!-- Failed suite [BDD Grid Suite] -->
