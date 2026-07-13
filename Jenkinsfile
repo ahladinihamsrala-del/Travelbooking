@@ -17,14 +17,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Run Selenium Tests on Grid') {
             steps {
                 echo 'Running Selenium Tests on Grid...'
-                sh 'mvn test -DGRID_URL=http://localhost:4444/wd/hub'
+                bat 'mvn test -DGRID_URL=http://localhost:4444/wd/hub'
             }
         }
 
