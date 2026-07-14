@@ -46,7 +46,7 @@ UserInfoRepository userInfoRepository = new UserInfoRepository();// connects wit
 	public void i_go_to_the_flights_results_page() {
 		
 		searchResultsPage.verifyFlightsPageLoaded();
-		//Assert.assertTrue(searchResultsPage.verifyFlightsPageLoaded().contains("Flight Results"));
+		
 	}
 	@Then("validate the flight search information is displayed in the header for {string} passenger")
 	public void validate_the_flight_search_information_is_displayed_in_the_header_for_passenger(String string) {
@@ -94,15 +94,14 @@ public void i_choose_the_earliest_departure_and_cheapest_return_and_proceed_with
 public void i_am_navigated_to_the_review_and_traveller_details_page() {
 	String reviewPageTitle=travellerInfoPage.verifyReviewPageLoaded();
 	System.out.println(reviewPageTitle);
-	//Assert.assertTrue(reviewPageTitle.contains("Review Flight Details"));
+	
 	
 }
 @When("I verify the flight details and airport details")
 public void i_verify_the_flight_details_and_airport_details() {
 	
 	
-	//Assert.assertTrue(travellerInfoPage.reviewDeptLoc().contains(givenLocation));
-			//Assert.assertEquals(travellerInfoPage.reviewDeptTime(), travelInfoContext.getSelectedDepartureTime());
+	
 	
 	
 	String fromLocation=userInfo.get("From location");

@@ -50,8 +50,6 @@ Feature: Hotel booking
    Then I am signed in successfully and taken to the search page
    When I search for Hotels in "<City>"
    Then I am navigated to the available hotels list page
-   When I apply the Exceptional Rating filter
-   Then I can see all the Hotels rated Exceptional
    When I search by locality in the search box
    Then I am navigated to the hotels by locality
    

@@ -51,9 +51,9 @@ public class Hooks {
 	    }
 	
 
-	@After
+/*	@After
 	public void tearDown() {
 		DriverManager.quitDriver();
-	}
+	}*/
 	}
 

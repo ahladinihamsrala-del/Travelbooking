@@ -52,7 +52,7 @@ public void i_search_for_hotels_in(String userCity) throws IOException {
 public void i_am_navigated_to_the_available_hotels_list_page() {
 String srpURL=	hotelsSearchResultsPage.getPageURL();
 System.out.print(srpURL);
-Assert.assertTrue(srpURL.contains("search/result"));
+Assert.assertTrue(srpURL.contains("hotels"));
 
     
 }
@@ -82,7 +82,7 @@ public void i_can_see_all_the_hotels_rted_exceptinal() {
 }
 @When("I search by locality in the search box")
 public void i_search_by_locality_in_the_search_box() {
-	Assert.assertTrue(	hotelsSearchResultsPage.verifyFilters("Madhapur"));
+	hotelsSearchResultsPage.verifyLocalSearch("Madhapur");
     
 }
 

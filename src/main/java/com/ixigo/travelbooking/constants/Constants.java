@@ -9,6 +9,8 @@ public final class Constants {
 
     public static final String LOGIN_DETAILS_SHEET = "TravellerInfo";
     public static final String HOTEL_DETAILS_SHEET = "HotelBooking";
+    public static final String BUS_DETAILS_SHEET = "BusBooking";
+
 
     public static final String COL_TRAVELLER_TYPE = "Travel Class";
     public static final String COL_FROM_LOCATION = "From location";
@@ -35,7 +37,16 @@ public final class Constants {
     public static final String COL_CHECKIN_DATE = "Checkin date";
     public static final String COL_CHECKOUT_DATE = "Checkout date";
     
-
+//  Buses sheet columns
+    public static final String COL_LEAVING_FROM = "Leaving from";
+    public static final String COL_GOING_TO = "Going to";
+    public static final String COL_BUS_DEPARTURE_DATE = "Departure Date";
+    public static final String COL_BOARDING_POINT = "Boarding point";
+    public static final String COL_DROPPING_POINT = "Dropping point";
+    public static final String COL_EMAIL = "Email";
+    public static final String COL_NAME = "Name";
+    public static final String COL_AGE = "Age";
+    
 
     public static final List<String> USER_COLUMNS =
             List.of(COL_TRAVELLER_TYPE, COL_FROM_LOCATION, COL_TO_LOCATION,COL_DEPARTURE_DATE,COL_RETURN_DATE,COL_FROM_LOCATION_AIRPORT,COL_TO_LOCATION_AIRPORT,COL_DEPARTURE_SPECS,
@@ -44,4 +55,8 @@ public final class Constants {
     
     public static final List<String> HOTEL_COLUMNS =
             List.of(COL_CITY,COL_LOCATION,COL_CHECKIN_DATE,COL_CHECKOUT_DATE);
+    
+    public static final List<String> BUS_COLUMNS =
+            List.of(COL_LEAVING_FROM,COL_GOING_TO,COL_BUS_DEPARTURE_DATE,COL_BOARDING_POINT,COL_DROPPING_POINT,
+            		COL_NAME,COL_AGE,COL_EMAIL);
 }

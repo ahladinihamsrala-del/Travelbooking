@@ -131,7 +131,7 @@ public class ElementsUtil {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView({block:'center'});", element);
         js.executeScript("arguments[0].click();", element);
-        System.out.println("Button clicked");
+        //System.out.println("Button clicked");
     }
 	
 	public int getNumberofElementsMatched(By locator)
@@ -147,6 +147,18 @@ public class ElementsUtil {
 	public void pageRefresh()
 	{
 		driver.navigate().refresh();
+	}
+	public void doScrollToTop() {
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, 0);");//scroll to Top of the page
+}
+	
+	public void clearText(By locator)
+	{
+		WebElement element = waitForVisibility(locator);
+		driver.findElement(locator).clear();
 	}
 }
 
