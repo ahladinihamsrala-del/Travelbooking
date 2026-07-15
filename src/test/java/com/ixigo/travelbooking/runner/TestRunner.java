@@ -11,7 +11,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-       		features = "src/test/resources/features",
+       		//features = "src/test/resources/features",
+       				features = "src/test/resources/features/featuretorun.feature",
     glue = {
         "com.ixigo.travelbooking.stepdefinitions",
         "com.ixigo.travelbooking.hooks"
@@ -30,5 +31,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     @Parameters({ "browser" })
     public void setUpRun(@Optional("chrome") String browser) {
         BrowserContext.setBrowser(browser);
+        System.setProperty("cucumber.plugin", "json:target/cucumber-reports/cucumber_" + browser + ".json");
     }
 }
