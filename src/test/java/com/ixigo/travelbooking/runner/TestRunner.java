@@ -11,8 +11,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-       		//features = "src/test/resources/features",
-       				features = "src/test/resources/features/featuretorun.feature",
+       		features = "src/test/resources/features",
     glue = {
         "com.ixigo.travelbooking.stepdefinitions",
         "com.ixigo.travelbooking.hooks"
