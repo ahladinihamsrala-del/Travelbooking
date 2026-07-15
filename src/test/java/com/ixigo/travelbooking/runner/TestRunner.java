@@ -30,5 +30,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     @Parameters({ "browser" })
     public void setUpRun(@Optional("chrome") String browser) {
         BrowserContext.setBrowser(browser);
+           System.setProperty("cucumber.plugin", "json:target/cucumber-reports/cucumber_" + browser + ".json");
     }
 }
