@@ -29,18 +29,18 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            cucumber buildStatus: 'UNSTABLE',
-                    fileIncludePattern: '**/cucumber.json',
-                    jsonReportDirectory: 'target/cucumber-reports',
-                    reportTitle: 'Cucumber Test Report'
-        }
-        success {
-            echo '✅ Pipeline completed successfully!'
-        }
-        failure {
-            echo '❌ Pipeline failed! Check the logs above.'
-        }
+   post {
+    always {
+        cucumber buildStatus: 'UNSTABLE',
+                fileIncludePattern: '**/cucumber_*.json',
+                jsonReportDirectory: 'target/cucumber-reports',
+                reportTitle: 'Cucumber Test Report'
     }
+    success {
+        echo '✅ Pipeline completed successfully!'
+    }
+    failure {
+        echo '❌ Pipeline failed! Check the logs above.'
+    }
+}
 }
