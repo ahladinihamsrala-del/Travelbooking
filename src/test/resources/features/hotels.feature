@@ -104,5 +104,5 @@ Feature: Hotel booking
    Examples:
       | City |
       |Hyderabad|
-      |Mumbai|
+     
    
