@@ -32,7 +32,7 @@ pipeline {
    post {
     always {
         cucumber buildStatus: 'UNSTABLE',
-                fileIncludePattern: '**/cucumber_*.json',
+                fileIncludePattern: '**/cucumber.json',
                 jsonReportDirectory: 'target/cucumber-reports',
                 reportTitle: 'Cucumber Test Report'
     }

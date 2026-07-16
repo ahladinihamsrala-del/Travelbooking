@@ -19,6 +19,7 @@ import io.cucumber.testng.CucumberOptions;
     plugin = {
         "pretty",
         "html:target/cucumber-report.html",
+        "json:target/cucumber-reports/cucumber.json",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
     },
     monochrome = true
@@ -29,6 +30,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     @Parameters({ "browser" })
     public void setUpRun(@Optional("chrome") String browser) {
         BrowserContext.setBrowser(browser);
-        System.setProperty("cucumber.plugin", "json:target/cucumber-reports/cucumber_" + browser + ".json");
+        
     }
 }
