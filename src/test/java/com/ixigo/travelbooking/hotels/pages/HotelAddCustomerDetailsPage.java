@@ -25,6 +25,7 @@ public class HotelAddCustomerDetailsPage extends BasePage {
 		elementsUtil.doSendKeys(emailTxt, "ahladini.hamsrala@gmail.com");*/
 		elementsUtil.scrollToElement(payNowButton);
 		elementsUtil.doClickJSbyElementPresence(payNowButton);
+		System.out.println("Added customer details");
 		
 
 		
