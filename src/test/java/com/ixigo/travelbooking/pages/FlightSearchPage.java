@@ -18,6 +18,9 @@ public class FlightSearchPage extends BasePage {
 		super(driver);
 	}
 
+	/*
+	 * Demo purpose
+	 */
 	
 	By roundTripButton = By.xpath("//button[normalize-space()='Round Trip']");
 	By fromCity = By.xpath("//span[normalize-space()='From']");
