@@ -44,7 +44,8 @@ public class SearchResultsPage extends BasePage {
 	By resultsFiltermsg = By.xpath("//p[contains(normalize-space(.), 'Flights Available')][1]");
 	By resultsFilternumber = By.xpath("substring-before(normalize-space(//p[contains(@class,'body-sm') and contains(@class,'text-secondary')]), ' Flights Available')");
 		
-	By priceSortLink =By.xpath("//input[@name='oneWayType' and @value='cheapest']");
+	//By priceSortLink =By.xpath("//input[@name='oneWayType' and @value='cheapest']");
+	By priceSortLink =By.xpath("//input[@name='oneWayType'][@value='cheapest']");
 	By fastestSortLink =By.xpath("//input[@name='oneWayType' and @value='quickest']");
 	By departSortLink =By.xpath("//input[@name='oneWayType' and @value='earliest']");
 	By smartSortLink =By.xpath("//input[@name='oneWayType' and @value='best']");

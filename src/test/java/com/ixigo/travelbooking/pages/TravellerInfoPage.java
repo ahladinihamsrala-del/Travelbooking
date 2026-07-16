@@ -52,8 +52,8 @@ public class TravellerInfoPage extends BasePage {
 		elementsUtil.doClickJSbyElementPresence(adult1CheckBox);
 		elementsUtil.scrollToElement(childCheckBox);
 		elementsUtil.doClickJSbyElementPresence(childCheckBox);
-		elementsUtil.scrollToElement(emailBox);
-		elementsUtil.doSendKeys(emailBox,userInfoRepo.get("Email address"));
+		//elementsUtil.scrollToElement(emailBox);
+		//elementsUtil.doSendKeys(emailBox,userInfoRepo.get("Email address"));
 		elementsUtil.scrollToElement(continueButton);
 		elementsUtil.doClickJSbyElementPresence(continueButton);
 		elementsUtil.doClick(confirmButton);
