@@ -58,7 +58,7 @@ public void openSignIn() throws IOException
 	if(popupElement.isDisplayed())
 		popupElement.click();*/
 	
-	elementsUtil.doClick(signInIcon);
+	elementsUtil.doClickJS(signInIcon);
 	//elementsUtil.doSendKeys(mobileNumberInput,prop.getFromPropertyFile("Mobile") );
 }
 
@@ -68,7 +68,7 @@ public void loginFromHomePageMobile() throws InterruptedException, IOException
 	elementsUtil.doSendKeys(mobileNumberInput, propReader.getFromPropertyFile("Mobile"));
 	
 	elementsUtil.doClickJS(loginContinueButton);
-	Thread.sleep(20000);//explicit delay to enter the OTP 
+	Thread.sleep(30000);//explicit delay to enter the OTP 
 	ExtentCucumberAdapter.addTestStepLog(
             "Login successful now navigating to ixigo page ");
 	elementsUtil.pageRefresh();
