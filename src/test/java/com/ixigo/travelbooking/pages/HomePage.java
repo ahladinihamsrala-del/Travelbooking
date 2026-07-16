@@ -58,7 +58,7 @@ public void openSignIn() throws IOException
 	if(popupElement.isDisplayed())
 		popupElement.click();*/
 	
-	elementsUtil.doClick(signInIcon);
+	elementsUtil.doClickJS(signInIcon);
 	//elementsUtil.doSendKeys(mobileNumberInput,prop.getFromPropertyFile("Mobile") );
 }
 
