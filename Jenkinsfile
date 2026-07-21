@@ -19,7 +19,7 @@ pipeline {
         stage('Run Selenium Tests on Grid') {
             steps {
                 echo 'Running Selenium Tests on Grid...'
-                bat 'mvn test -DGRID_URL=http://localhost:4444/wd/hub'
+                bat 'mvn test -DGRID_URL=http://192.168.4.190:4444/wd/hub'
             }
         }
         stage('Publish Test Reports') {
